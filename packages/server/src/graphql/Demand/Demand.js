@@ -8,13 +8,14 @@ export const typeDefs = gql`
         deadline: String
     }
 
-    extends type Query{
+    extend type Query{
         demands: [Demand]!
     }
     `;
 
+
 export const resolvers = {
     Query: {
-        demands: () => [],
-    }
+        demands: () => []
+    },
 };
